@@ -10,7 +10,8 @@ lazy val `http-sample-app` =
     .settings(
       libraryDependencies ++= Seq(
         library.scalaCheck % Test,
-        library.scalaTest  % Test
+        library.scalaTest  % Test,
+        library.okHttp
       )
     )
 
@@ -24,8 +25,9 @@ lazy val library =
       val scalaCheck = "1.13.4"
       val scalaTest  = "3.0.1"
     }
-    val scalaCheck = "org.scalacheck" %% "scalacheck" % Version.scalaCheck
-    val scalaTest  = "org.scalatest"  %% "scalatest"  % Version.scalaTest
+    val scalaCheck = "org.scalacheck"       %% "scalacheck" % Version.scalaCheck
+    val scalaTest  = "org.scalatest"        %% "scalatest"  % Version.scalaTest
+    val okHttp     = "com.squareup.okhttp3" % "okhttp-ws" % "3.4.2"
   }
 
 // *****************************************************************************
