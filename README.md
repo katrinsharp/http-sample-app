@@ -1,6 +1,6 @@
-# angelos-sample-app #
+# http-sample-app #
 
-Welcome to angelos-sample-app!
+Welcome to http-sample-app!
 
 # App
 
